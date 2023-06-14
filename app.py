@@ -10,6 +10,8 @@ def home():
     Message = None
     if cpu_percent > 80 or cpu_percent > 80:
         Message = "High cpu or memory utilization detected,please scale up"
+    # return render_template("/template/index.html", cpu_metric=cpu_percent, mem_metric=mem_percent, message=Message)
+
     return f"cpu utilization : {cpu_percent} and memory utilization : {mem_percent}"
 
     
